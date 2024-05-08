@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function isOdd(num) {
+            return num % 2 === 1
+        }
+        function isEven(num) {
+            return num % 2 === 0
+        }
+        var list = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        // for
+        // push in array
+        // unshift in array
+        var oddList = []
+        var evenList = []
+        for (var i = 0; i < list.length; i = i + 1) {
+            var odd = isOdd(list[i])
+            var even = isEven(list[i])
+            if (odd === true) {
+                list[i] = 'change'
+                // oddList.push(list[i])
+            }
+            else {
+                // evenList.push(list[i])
+            }
+
+
+        }
+        // console.log('list', list);
+        // console.log(" oddList : ", oddList)
+        // console.log(" evenList : ", evenList)
+        // do while
+        // var i = 0;
+        // do {
+        //     console.log('item of array with do while', list[i]);
+        //     i = i + 1
+        // } while (i < list.length)
+        // var i = 0
+        // while (i < list.length) {
+        //     console.log('item of array with while', list[i]);
+        //     i = i + 1
+        // }
+
+        // declaration function
+
+        // function sayHello(i) {
+        //     console.log('Hi ', i);
+        // }
+
+        // sayHello('alireza')
+        // sayHello('hasan')
+        // sayHello('ali')
+        // sayHello('akbar')
+
+
+        // expression function
+        // sayHelloEx('asqar')
+
+        // var sayHelloEx = function (params) {
+        //     console.log('Hi to ', params);
+        // }
+        // sayHelloEx('asqar')
+
+        // var a = 10;
+        // var b = 20;
+        // function sumFn(b, a) {
+        //     console.log(" b : ", b)
+        //     console.log(" a : ", a)
+        //     return a + b
+        // }
+        // var c = sumFn(a, b)
+        // console.log(" c : ", c)
+
+        // var newList = [1, 2, 3, 4, 5]
+        // newList.unshift(0)
+
+        // for (var i = 0; i < newList.length; i = i + 1) {
+        //     console.log(i, newList[i])
+
+        // }
+
+        var name = 'asqar';
+        var age = 19;
+        var rich = true
+        // if (name === 'alireza' && age > 20) {
+        //     console.log('true');
+        // } else {
+        //     console.log('false');
+        // }
+        if (name === 'alireza' || rich === true) {
+            console.log('hi');
+        } else {
+            console.log('block');
+        }
+        var users = [
+            {
+                name: 'alireza',
+                gender: 'male'
+            }, {
+                name: 'x',
+                gender: 'male'
+            }, {
+                name: 'y',
+                gender: 'female'
+            }, {
+                name: 'q',
+                gender: 'female'
+            }, {
+                name: 'cf',
+                gender: 'male'
+            }, {
+                name: 'v',
+                gender: 'male'
+            },
+        ]
+    </script>
+</body>
+
+</html>
