@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var users = [
+        {
+          name: "alireza",
+          gender: "male",
+        },
+        {
+          name: "x",
+          gender: "male",
+        },
+        {
+          name: "y",
+          gender: "female",
+        },
+        {
+          name: "q",
+          gender: "female",
+        },
+        {
+          name: "cf",
+          gender: "male",
+        },
+        {
+          name: "v",
+          gender: "male",
+        },
+      ];
+
+      var femaleNames = [];
+      var maleNames = [];
+      for (var i = 0; i < users.length; i++) {
+        if (users[i].gender === "male") {
+          maleNames.push(users[i].name);
+        } else if (users[i].gender === "female") {
+          femaleNames.push(users[i].name);
+        }
+      }
+      console.log("male names: ", maleNames);
+      console.log("femaleNames : ", femaleNames);
+    </script>
+  </body>
+</html>
